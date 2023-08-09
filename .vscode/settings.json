@@ -1,0 +1,9 @@
+{
+    "dotnet.defaultSolution": "buckpal-csharp.sln",
+    "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForOtherParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForParameters": true,
+	"explorer.excludeGitIgnore": true 
+}

@@ -4,14 +4,14 @@
     "customizations": {
       "vscode": {
         "extensions": [
-          "ms-dotnettools.csdevkit@0.3.21",
+          "ms-dotnettools.csharp@2.0.328",
+          // "ms-dotnettools.csdevkit@0.3.21",
           "esbenp.prettier-vscode@9.19.0",
           "eamodio.gitlens@14.2.0"
         ],
         "settings": {
           "gitlens.telemetry.enabled": false,
           "dotnetAcquisitionExtension.enableTelemetry": false
-          // "dotnetAcquisitionExtension.enableTelemetry": false,
           // "dotnetAcquisitionExtension.existingDotnetPath": [
           //   {
           //     "extensionId": "msazurermtools.azurerm-vscode-tools",
