@@ -5,6 +5,7 @@ ARG INSTALL_DIR=/home/vscode/dotnetsdk
 
 RUN apt update &&\
 apt -y full-upgrade &&\
+apt -y install entr &&\
 wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh &&\
 chmod +x ./dotnet-install.sh &&\
 ./dotnet-install.sh --channel $DOTNETSDK_VERSION --install-dir $INSTALL_DIR &&\
