@@ -11,6 +11,8 @@ Inspired by https://github.com/thombergs/buckpal
 
 * [.NET SDK 7.0](https://dotnet.microsoft.com)
 * [xUnit.net](https://xunit.net)
+* [ASP.NET Core OData V4](https://learn.microsoft.com/en-us/odata/webapi-8/overview)
+* [Dapper ORM](https://github.com/DapperLib/Dapper)
 * [Visual Studio Code](https://code.visualstudio.com)
 * [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume)
 
