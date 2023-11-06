@@ -4,6 +4,8 @@ namespace Domain.ValueObject;
 
 public record Money(BigInteger Amount)
 {
+    public static Money ZERO = Money.Of(0);
+
     public Boolean IsPositiveOrZero() => this.Amount.CompareTo(BigInteger.Zero) >= 0;
 
     public Boolean IsNegative() => this.Amount.CompareTo(BigInteger.Zero) < 0;

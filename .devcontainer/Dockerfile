@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/devcontainers/base:bookworm
 
-ARG DOTNETSDK_VERSION=7.0
+ARG DOTNETSDK_VERSION=8.0
 ARG INSTALL_DIR=/home/vscode/dotnetsdk
 
 RUN apt update &&\

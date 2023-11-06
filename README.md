@@ -9,7 +9,8 @@ Inspired by https://github.com/thombergs/buckpal
 
 ## Tech Stack
 
-* [.NET SDK 7.0](https://dotnet.microsoft.com)
+* [C# 12](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12)
+* [.NET SDK 8.0](https://dotnet.microsoft.com)
 * [xUnit.net](https://xunit.net)
 * [ASP.NET Core OData V4](https://learn.microsoft.com/en-us/odata/webapi-8/overview)
 * [Dapper ORM](https://github.com/DapperLib/Dapper)

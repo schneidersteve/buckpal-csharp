@@ -5,14 +5,14 @@ namespace Domain.ValueObject.Tests;
 public class MoneyTest
 {
     [Fact]
-    public void TestOf()
+    public void Of()
     {
         var money = Money.Of(42);
         Assert.Equal(new BigInteger(42), money.Amount);
     }
 
     [Fact]
-    public void TestAddPlus()
+    public void AddPlus()
     {
         var a = Money.Of(1);
         var b = Money.Of(2);
@@ -22,7 +22,7 @@ public class MoneyTest
     }
 
     [Fact]
-    public void TestSubtractMinus()
+    public void SubtractMinus()
     {
         var a = Money.Of(7);
         var b = Money.Of(3);
