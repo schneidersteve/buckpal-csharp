@@ -6,7 +6,7 @@ public record AccountId(long Value);
 
 public class Account
 {
-    AccountId? Id { get; }
+    public virtual AccountId? Id { get; }
     Money baselineBalance;
     public ActivityWindow ActivityWindow { get; }
 
@@ -22,7 +22,7 @@ public class Account
 
     public Money CalculateBalance() => baselineBalance + ActivityWindow.CalculateBalance(Id!);
 
-    public bool Withdraw(Money money, AccountId targetAccountId)
+    public virtual bool Withdraw(Money money, AccountId targetAccountId)
     {
         if (!MayWithdraw(money))
         {
@@ -35,7 +35,7 @@ public class Account
 
     bool MayWithdraw(Money money) => (CalculateBalance() + money.Negate()).IsPositiveOrZero();
 
-    public bool Deposit(Money money, AccountId sourceAccountId)
+    public virtual bool Deposit(Money money, AccountId sourceAccountId)
     {
         Activity deposit = new(Id!, sourceAccountId, Id!, DateTime.Now, money);
         ActivityWindow.AddActivity(deposit);

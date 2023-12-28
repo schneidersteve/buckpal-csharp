@@ -12,6 +12,7 @@ Inspired by https://github.com/thombergs/buckpal
 * [C# 12](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12)
 * [.NET SDK 8.0](https://dotnet.microsoft.com)
 * [xUnit.net](https://xunit.net)
+* [JustMock Lite](https://github.com/telerik/JustMockLite)
 * [ASP.NET Core OData V4](https://learn.microsoft.com/en-us/odata/webapi-8/overview)
 * [Dapper ORM](https://github.com/DapperLib/Dapper)
 * [Visual Studio Code](https://code.visualstudio.com)
@@ -29,17 +30,18 @@ Feature: Send Money
   Scenario: Transaction succeeds
     Given a source account
     And a target account
+    And money
+    And source account withdrawal will succeed
+    And target account deposit will succeed
 
     When money is send
 
     Then send money succeeds
 
     And source account is locked
-    And source account withdrawal will succeed
     And source account is released
 
     And target account is locked
-    And target account deposit will succeed
     And target account is released
 
     And accounts have been updated

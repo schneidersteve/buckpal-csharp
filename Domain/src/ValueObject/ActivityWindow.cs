@@ -7,7 +7,7 @@ public class ActivityWindow(IList<Activity> activities)
 {
     public ActivityWindow(params Activity[] activities) : this(activities.ToList()) { }
 
-    public DateTime GetStartTimestamp() => activities.MinBy(a => a.Timestamp).Timestamp;
+    public DateTime GetStartTimestamp() => activities.MinBy(a => a.Timestamp)!.Timestamp;
 
     public DateTime GetEndTimestamp() => activities.Max(a => a.Timestamp);
 
